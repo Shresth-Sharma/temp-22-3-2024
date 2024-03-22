@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Flavourz</title>
+    <link id="cssid" rel="stylesheet" type="text/css" href="style2.css">
+    <script>window.scrollTo(0,0);</script>
+</head>
+<body>
+    <svg id="loader" class="ip" viewBox="0 0 256 128" width="256px" height="128px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#5ebd3e" />
+                <stop offset="33%" stop-color="#ffb900" />
+                <stop offset="67%" stop-color="#f78200" />
+                <stop offset="100%" stop-color="#e23838" />
+            </linearGradient>
+            <linearGradient id="grad2" x1="1" y1="0" x2="0" y2="0">
+                <stop offset="0%" stop-color="#e23838" />
+                <stop offset="33%" stop-color="#973999" />
+                <stop offset="67%" stop-color="#009cdf" />
+                <stop offset="100%" stop-color="#5ebd3e" />
+            </linearGradient>
+        </defs>
+        <g fill="none" stroke-linecap="round" stroke-width="16">
+            <g class="ip__track" stroke="#ddd">
+                <path d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56"/>
+                <path d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64"/>
+            </g>
+            <g stroke-dasharray="180 656">
+                <path class="ip__worm1" stroke="url(#grad1)" stroke-dashoffset="0" d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56"/>
+                <path class="ip__worm2" stroke="url(#grad2)" stroke-dashoffset="358" d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64"/>
+            </g>
+        </g>
+    </svg>
+    <div id="content">
+        <img id="back" src="logo.jpg">
+        <div id="maincontent">
+            <div id="mainNameContainer">
+                <!-- <button id="scrollbt"><img src="scroll.jpg"></button> -->
+                <h1 id="mainname1" class="mainname">Dream</h1>
+                <h1 id="mainname2" class="mainname">Flavourz</h1>
+                <p id="fullform">(<b>D</b>electable, <b>R</b>efreshing, <b>E</b>xquisite, <b>A</b>ppetizing and <b>M</b>arvelous)</p>
+                <center>
+                    <p id="sweets">SWEETS</p>
+                </center>
+            </div>
+            <iframe id="sweetframe"></iframe>
+        </div>
+        <button id='myweb'>
+            <div id="bottom">
+                <img id="bottomimg" src="logo.png">
+                <p id="bottomname">Shresth._.Sharma</p>
+                <!-- <p id="bottomname2">|</p> -->
+                <p id="bottomname3">Copyright © 2024 Shresth._.Sharma</p>
+                <a href="https://www.instagram.com/Shresth.Sharma_/"><img id="bottominstaimg" src="instab.png"></a>
+                <a href="https://www.github.com/Shresth-Sharma-2008/"><img id="bottomgitimg" src="gitb.png"></a>
+            </div>
+        </button>
+    </div>
+    <script>
+        let content = document.getElementById('content');
+        let loader = document.getElementById('loader');
+        // loader.style.display = 'none';
+        content.style.display = 'none';
+        function show(){
+            window.scrollTo(0,0);
+            loader.style.display = 'none';
+            content.style.display = 'block';
+            if(window.scrollY==0){
+                setTimeout(scrolla, 1500);
+            }
+        }
+        window.addEventListener('load', function(){
+            setTimeout(show, 2000)
+        })
+        let myweb = document.getElementById('myweb')
+        myweb.addEventListener('click', function(){
+            window.open('https://shresth-sharma.github.io', '_blank')
+        })
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

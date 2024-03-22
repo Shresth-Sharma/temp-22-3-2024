@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="cssid" rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="item">
+            <img class="itemimg" src="../img/s1.jpg">
+            <center>
+                <h2 class="itemlabel">Rasmalai</h2>
+                <button class="itembt" onclick="window.open('https://instagram.com/dreamflavourz23', '_blank')">Order Now</button>
+            </center>
+        </div>
+        <div class="item">
+            <img class="itemimg" src="../img/s2.jpg">
+            <center>
+                <h2 class="itemlabel">Rasmalai</h2>
+                <button class="itembt" onclick="window.open('https://instagram.com/dreamflavourz23', '_blank')">Order Now</button>
+            </center>
+        </div>
+        <div class="item">
+            <img class="itemimg" src="../img/s3.jpg">
+            <center>
+                <h2 class="itemlabel">Rasmalai</h2>
+                <button class="itembt" onclick="window.open('https://instagram.com/dreamflavourz23', '_blank')">Order Now</button>
+            </center>
+        </div>
+        <div class="item">
+            <img class="itemimg" src="../img/s4.jpg">
+            <center>
+                <h2 class="itemlabel">Rasmalai</h2>
+                <button class="itembt" onclick="window.open('https://instagram.com/dreamflavourz23', '_blank')">Order Now</button>
+            </center>
+        </div>
+        <div class="item">
+            <img class="itemimg" src="../img/s5.jpg">
+            <center>
+                <h2 class="itemlabel">Rasmalai</h2>
+                <button class="itembt" onclick="window.open('https://instagram.com/dreamflavourz23', '_blank')">Order Now</button>
+            </center>
+        </div>
+        <div class="item">
+            <img class="itemimg" src="../img/s6.jpg">
+            <center>
+                <h2 class="itemlabel">Rasmalai</h2>
+                <button class="itembt" onclick="window.open('https://instagram.com/dreamflavourz23', '_blank')">Order Now</button>
+            </center>
+        </div>
+        <div class="item">
+            <img class="itemimg" src="../img/s7.jpg">
+            <center>
+                <h2 class="itemlabel">Rasmalai</h2>
+                <button class="itembt" onclick="window.open('https://instagram.com/dreamflavourz23', '_blank')">Order Now</button>
+            </center>
+        </div>
+        <div class="item">
+            <img class="itemimg" src="../img/s8.jpg">
+            <center>
+                <h2 class="itemlabel">Rasmalai</h2>
+                <button class="itembt" onclick="window.open('https://instagram.com/dreamflavourz23', '_blank')">Order Now</button>
+            </center>
+        </div>
+    </div>
+    <script>
+        var item = document.getElementById("wrapper");
+        // window.addEventListener("wheel", function (e) {
+        //     console.log(e.deltaY)
+        // if (e.deltaY > 0) item.scrollLeft += 300;
+        // else item.scrollLeft -= 300;
+        // });
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+
+        // Access the passed arguments
+        var width = urlParams.get('width');
+        var height = urlParams.get('height');
+        if(width/height > 1){
+            document.getElementById('cssid').setAttribute('href', 'style.css')
+        }
+        else{
+            document.getElementById('cssid').setAttribute('href', 'style1.css')
+        }
+    </script>
+</body>
+</html>
